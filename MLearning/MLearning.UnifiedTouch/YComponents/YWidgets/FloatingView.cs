@@ -118,8 +118,8 @@ namespace YComponents.YWidgets
 			topContent.Add (logoimage);
 
 			//avance tareas text
-			var avancelabel = new UILabel(new CGRect(218,20,125,16));
-			avancelabel.Text = "Avance de tareas";
+			var avancelabel = new UILabel(new CGRect(218,30,125,16));
+			avancelabel.Text = "reading progress";
 			avancelabel.Font = UIFont.FromName ("HelveticaNeue", 14);
 			topContent.Add (avancelabel);
 
