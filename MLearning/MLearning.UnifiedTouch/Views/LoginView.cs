@@ -399,13 +399,11 @@ namespace MLearning.UnifiedTouch.Views
 			descriptionView = new UIView (new CGRect(338, 374, 348, 110));
 			mainView.Add (descriptionView);
 
-			string s1 = "Connect with your classmates";
-			string s2 = "Get help on homework";
-			string s3 = "Get better graces for real";
+			string s1 = "Connect with your friends";
+			string s2 = "Get help on the comic story";
 
-			descriptionView.Add (getTextField(s1, 8, 28 , 0,0,348, 30 , 24f));
-			descriptionView.Add (getTextField(s2, 8, 20 , 0,44,348, 30, 24f));
-			descriptionView.Add (getTextField(s3, 17, 26 , 0,88,348, 30, 24f));
+			descriptionView.Add (getTextField(s1, 8, 25 , 0,0,348, 30 , 24f));
+			descriptionView.Add (getTextField(s2, 8, 27 , 0,44,348, 30, 24f));
 		}
 
 
