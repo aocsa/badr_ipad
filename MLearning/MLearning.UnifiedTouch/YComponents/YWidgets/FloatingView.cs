@@ -118,8 +118,10 @@ namespace YComponents.YWidgets
 			topContent.Add (logoimage);
 
 			//avance tareas text
-			var avancelabel = new UILabel(new CGRect(218,30,125,16));
+			var avancelabel = new UILabel(new CGRect(218,25,125,16));
 			avancelabel.Text = "reading progress";
+			avancelabel.TextColor = UIColor.White;
+
 			avancelabel.Font = UIFont.FromName ("HelveticaNeue", 14);
 			topContent.Add (avancelabel);
 
@@ -129,7 +131,7 @@ namespace YComponents.YWidgets
 			topContent.Add (loadView);
 
 			//nombre del usuario
-			usernameLabel = new UILabel(new CGRect(602,28, 80,16)){ Text = "Steven"};
+			usernameLabel = new UILabel(new CGRect(602,28, 80,16)){ Text = "  "}; //Steven 
 			usernameLabel.Font = UIFont.FromName ("HelveticaNeue", 14);
 			topContent.Add (usernameLabel);
 
