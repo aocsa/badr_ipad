@@ -124,7 +124,7 @@ namespace MLearning.UnifiedTouch.Views
 				});
 			};
  
-			floatView.backCenterImage.Image = UIImage.FromFile ("efiles/fondologin.jpg");
+			floatView.backCenterImage.Image = UIImage.FromFile ("efiles/fondologin.png");
 
 			UITapGestureRecognizer dologout = new UITapGestureRecognizer (() => {
 				vm.LogoutCommand.Execute(null);
@@ -569,7 +569,7 @@ namespace MLearning.UnifiedTouch.Views
 		{
 			waitImage = new UIImageView (new CGRect(0,0,1024,768));
 			waitImage.Layer.ZPosition = -2;
-			UIImage bimg = UIImage.FromFile ("efiles/backgroundmuro.jpg");
+			UIImage bimg = UIImage.FromFile ("efiles/backgroundmuro.png");
 			//UIImageEffects.ApplyBlur (, 90, 
 			//			WidgetsUtil.bthemes[vm.ThemeID%6], 0.6f, null);
 

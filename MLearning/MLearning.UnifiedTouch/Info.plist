@@ -9,7 +9,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
-	<string>9.0</string>
+	<string>9.2</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>2</integer>
@@ -27,8 +27,6 @@
 	</array>
 	<key>CFBundleDisplayName</key>
 	<string>EduticNow</string>
-	<key>UIPrerenderedIcon</key>
-	<true/>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-72</string>
@@ -48,5 +46,7 @@
 	<true/>
 	<key>CFBundleVersion</key>
 	<string>2.0</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 </dict>
 </plist>

@@ -168,7 +168,7 @@ namespace MLearning.UnifiedTouch.Views
 		void setBackground()
 		{
 			backImage = new UIImageView (new CGRect(0,0,EConstants.DeviceWidth,EConstants.DeviceHeight));
-			backImage.Image = UIImage.FromFile ("efiles/fondologin.jpg");//filepath + "fondoa.jpg");
+			backImage.Image = UIImage.FromFile ("efiles/fondologin.png");//filepath + "fondoa.jpg");
 			View.Add (backImage);
 		}
 
@@ -388,7 +388,7 @@ namespace MLearning.UnifiedTouch.Views
 		UIImageView logoImage ;
 		void setLogo()
 		{
-			logoImage = new UIImageView (new CGRect(370,276,282,54));
+			logoImage = new UIImageView (new CGRect(370,276,282,30));
 			logoImage.Image = UIImage.FromFile (filepath + "logo.png");
 			mainView.Add (logoImage);
 		}
@@ -513,7 +513,7 @@ namespace MLearning.UnifiedTouch.Views
 
 		void initBlurEffect()
 		{
-			blurMask = new YBlurMask ("efiles/fondologin.jpg", 0, 0, YConstants.DeviceWidht, YConstants.DeviceHeight);
+			blurMask = new YBlurMask ("efiles/fondologin.png", 0, 0, YConstants.DeviceWidht, YConstants.DeviceHeight);
 			View.Add (blurMask);	
 		}
 

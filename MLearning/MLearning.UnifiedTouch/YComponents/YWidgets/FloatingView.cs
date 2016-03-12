@@ -113,7 +113,7 @@ namespace YComponents.YWidgets
 			content.Add (topContent);
 
 			//add logo
-			var logoimage = new UIImageView(new CGRect(16,16,102,20)){ContentMode = UIViewContentMode.ScaleAspectFit};
+			var logoimage = new UIImageView(new CGRect(16,16,140,28)){ContentMode = UIViewContentMode.ScaleAspectFit};
 			logoimage.Image = UIImage.FromFile (filepath+"logo.png");
 			topContent.Add (logoimage);
 

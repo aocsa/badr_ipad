@@ -465,12 +465,9 @@
     <BundleResource Include="efiles\topwhite.png" />
     <BundleResource Include="efiles\reader\back.png" />
     <BundleResource Include="efiles\reader\next.png" />
-    <BundleResource Include="efiles\fondologin.jpg" />
     <BundleResource Include="efiles\muro\icon_logout.png" />
-    <BundleResource Include="Resources\Default-Portrait.png" />
     <BundleResource Include="Resources\Default-Landscape.png" />
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
-    <BundleResource Include="Resources\Default-Portrait%402x.png" />
     <BundleResource Include="Resources\Icon-72.png" />
     <BundleResource Include="Resources\Icon-72%402x.png" />
     <BundleResource Include="Resources\Icon-76.png" />
@@ -481,9 +478,10 @@
     <BundleResource Include="Resources\Icon-Small-40%402x.png" />
     <BundleResource Include="Resources\Icon-Small.png" />
     <BundleResource Include="Resources\Icon-Small%402x.png" />
-    <BundleResource Include="efiles\backgroundmuro.jpg" />
     <BundleResource Include="Resources\Icon-57.png" />
     <BundleResource Include="Resources\Icon-57%402x.png" />
+    <BundleResource Include="efiles\fondologin.png" />
+    <BundleResource Include="efiles\backgroundmuro.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork%402x" />

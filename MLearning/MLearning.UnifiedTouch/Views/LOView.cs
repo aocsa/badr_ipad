@@ -31,7 +31,7 @@ namespace MLearning.UnifiedTouch.Views
 
 			View.BackgroundColor = UIColor.White;
 			backImage = new UIImageView (new CGRect(0,0,1024,768));
-			backImage.Image = UIImage.FromFile (filepath + "backgroundmuro.jpg");
+			backImage.Image = UIImage.FromFile (filepath + "backgroundmuro.png");
 			View.Add (backImage);	
 
 			initLoad = new YComponents.LoadingView (View.Bounds); 
