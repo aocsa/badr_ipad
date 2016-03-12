@@ -44,9 +44,9 @@
 	<true/>
 	<key>CFBundleVersion</key>
 	<string>2.0</string>
-	<key>UIPrerenderedIcon</key>
-	<true/>
 	<key>CFBundleName</key>
 	<string>BattleOfBadr</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 </dict>
 </plist>
