@@ -46,7 +46,7 @@ namespace Core.Repositories
 		{
 
 			UseLocalDBWhenOffline = true;
-			MobileService = new MobileServiceClient("https://eduticservice2016.azure-mobile.net/", "EHmeLHXJUiWhHBHYYAoOtsYJLwSZWh33");
+			MobileService = new MobileServiceClient("https://eduticservice2016-3.azure-mobile.net/", "dYypEXvwIrEqHAIojawdlOSORpbKZx54");
 			//MobileService = new MobileServiceClient("https://mlearningservice.azure-mobile.net/", "xIAzBqsUDUutvnCTruCwpCozkkyNkj33");
 			//	MobileService = new MobileServiceClient("https://eduticservice.azure-mobile.net/", "dbKHHcwqYgLERWaOCVSHfccSQIWSKv93");
 			_liteConnection = factory.Create(Constants.LocalDbName);
@@ -69,7 +69,7 @@ namespace Core.Repositories
 		{
 
 			//    CurrentPlatform.Init();
-			MobileService = new MobileServiceClient("https://eduticservice2016.azure-mobile.net/", "EHmeLHXJUiWhHBHYYAoOtsYJLwSZWh33");
+			MobileService = new MobileServiceClient("https://eduticservice2016-3.azure-mobile.net/", "dYypEXvwIrEqHAIojawdlOSORpbKZx54");
 			//MobileService = new MobileServiceClient("https://mlearningservice.azure-mobile.net/", "xIAzBqsUDUutvnCTruCwpCozkkyNkj33");
 			//MobileService = new MobileServiceClient("https://eduticservice.azure-mobile.net/", "dbKHHcwqYgLERWaOCVSHfccSQIWSKv93");
 
@@ -365,6 +365,66 @@ namespace Core.Repositories
 				else
 				{
 					result = await MobileService.GetTable<T>().Take(_takeNRows).Where(predicate).ToListAsync();
+
+
+				}
+
+
+
+
+			}
+			catch (WebException e)
+			{
+				if (UseLocalDBWhenOffline)
+				{
+					result = SearchForLocalTable<T>(predicate);
+				}
+				else
+				{
+					throw e;
+				}
+			}
+
+
+			return result;
+
+
+
+		}
+		//If cacheResult is true, save the results in localDB and use synchronization 
+		public async Task<List<T>> SearchForAsync<T>(System.Linq.Expressions.Expression<Func<T, bool>> predicate, Func<T, DateTime> getLastUpdate,Func<T,int> getID,Expression<Func<T,int>> sortExpr, bool cacheResult) where T : new()
+		{
+			List<T> result;
+
+			try
+			{
+
+				//If want to cache result
+
+				if (cacheResult)
+				{
+
+					//Check synchronization dates
+					DateTime lastSync =  await TableHasUpdate<T>();
+
+					if (lastSync != DateTime.MaxValue)
+					{
+						//Have Update
+						//Get results from lastSyncDate and save them to DB if cacheResult its true
+						//TODO: Filter with predicate
+						await SyncLocalTable<T>(lastSync, getID);
+
+
+					}
+
+
+					//No Update, use local
+					result = SearchForLocalTable<T>(predicate);
+
+				}
+				else
+				{
+					result = await MobileService.GetTable<T>().Take(_takeNRows).Where(predicate).OrderBy( sortExpr ).ToListAsync();
 
 
 				}

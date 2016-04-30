@@ -109,7 +109,6 @@
     <Compile Include="Security\Sha256.cs" />
     <Compile Include="Services\IMLearningService.cs" />
     <Compile Include="Services\MLearningAzureService.cs" />
-    <Compile Include="Session\SessionService.cs" />
     <Compile Include="Session\SharedPreferences.cs" />
     <Compile Include="swp8\Bootstrap\CommunitySqlitePluginBootstrap.cs" />
     <Compile Include="Upload\AzureUploader.cs" />
@@ -130,6 +129,7 @@
     <Compile Include="ViewModels\RegisterViewModel.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\tag_by_lo.cs" />
+    <Compile Include="Session\SessionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">

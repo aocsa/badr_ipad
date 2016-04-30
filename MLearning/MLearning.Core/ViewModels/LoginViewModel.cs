@@ -11,7 +11,7 @@ using Microsoft.WindowsAzure.MobileServices;
 using MLearning.Core.Services;
 using MLearning.Core.ViewModels;
 using MLearningDBResult;
-using Referee.Core.Session;
+using MLearning.Core.Session;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +47,7 @@ namespace Core.ViewModels
             _mLearningService = mLearningService;
 
             
-            Username = "aocsa";
+            Username = "nwes_aocsa";
             Password = "1";
 
 

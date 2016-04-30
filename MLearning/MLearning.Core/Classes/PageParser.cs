@@ -1,5 +1,4 @@
 ﻿using Core.DownloadCache;
-using Core.Session;
 using MLearning.Core.Configuration;
 using MLearning.Core.Entities.json;
 using System;
@@ -7,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Session;
 
 namespace MLearning.Core.Classes
 {

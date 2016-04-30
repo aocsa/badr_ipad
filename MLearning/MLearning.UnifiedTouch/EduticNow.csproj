@@ -23,12 +23,12 @@
     <MtouchLink>None</MtouchLink>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>iPhone Distribution: ALEXANDER O MAMANI (R2ERAKUSE3)</CodesignKey>
+    <CodesignKey>iPhone Developer: Alexander Ocsa (BBH4YG2MSY)</CodesignKey>
     <MtouchProfiling>true</MtouchProfiling>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>
-    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignProvision></CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -65,7 +65,7 @@
     </MtouchI18n>
     <IpaPackageName>
     </IpaPackageName>
-    <CodesignProvision>6404caf4-a493-4f9e-ae90-c428b90db2d2</CodesignProvision>
+    <CodesignProvision>c987d74c-c7af-4772-a67f-df28b6d46e22</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <Optimize>true</Optimize>

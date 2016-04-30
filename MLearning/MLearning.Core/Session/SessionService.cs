@@ -63,8 +63,7 @@ namespace Core.Session
 
 
 
-
-
+ 
         public static bool HasLoggedIn(out string username, out int user_id)
         {
             var storage = Mvx.Resolve<IMvxFileStore>();

@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using Cirrious.CrossCore.Platform;
 
-namespace MLearning.UnifiedTouch
+namespace MLearning.BadrIndex
 {
     public class DebugTrace : IMvxTrace
     {

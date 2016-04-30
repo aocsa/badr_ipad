@@ -6,7 +6,7 @@ using Cirrious.MvvmCross.ViewModels;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 
-namespace MLearning.UnifiedTouch
+namespace MLearning.BadrIndex
 {
     [Register("AppDelegate")]
 	public partial class AppDelegate : MvxApplicationDelegate

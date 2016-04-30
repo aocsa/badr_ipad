@@ -6,7 +6,7 @@ using Cirrious.CrossCore;
 using MLearning.Core.File;
 using MLearning.UnifiedTouch.File;
 
-namespace MLearning.UnifiedTouch
+namespace MLearning.BadrIndex
 {
 	public class Setup : MvxTouchSetup
 	{
